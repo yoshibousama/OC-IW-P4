@@ -11,16 +11,180 @@
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
   rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
- <title>OhMyFood</title>
+ <link rel="stylesheet" href="css/style.css">
+ <title>OhMyFood Menu de La Palette Du Gout</title>
 </head>
 
 <body>
+ <!-- SECTION HEADER -->
  <header>
-  <img src="/Images/logo/ohmyfood.png" alt="logo" class="header_logo">
+  <div class="header_container">
+   <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+   <h1><img src="/Images/logo/ohmyfood.png" alt="logo" class="header_logo"></h1>
+  </div>
  </header>
  <main>
+  <!-- SECTION BANNER -->
+  <div>
+   <div class="banner_container">
+    <img src="/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="photo d'un plat de la palette du gout">
+   </div>
+  </div>
+  <!-- SECTION MENU -->
+  <section>
+   <div class="menu_container">
+    <div>
+     <h2 class="menu_title">La palette du gout</h2>
+     <i class="far fa-heart"></i>
+    </div>
+    <div class="menu">
+     <!-- SECTION STARTER -->
+     <h3 class="menu_title-desc">Entrées</h3>
+     <div class="menu_starter">
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='starter_1'>
+       <label for='starter_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Fricassée d'escargots</span>
+         <span class='plate_text'>Au piment d'Espelette</span>
+        </span>
+        <span class='plate_price'>25€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='starter_2'>
+       <label for='starter_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Foie gras de canard mi-cuit</span>
+         <span class='plate_text'>Et ses copeaux de truffe noire</span>
+        </span>
+        <span class='plate_price'>35€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='starter_3'>
+       <label for='starter_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Œuf au plat</span>
+         <span class='plate_text'>Assaisonné à la truffe sur lit de caviar</span>
+        </span>
+        <span class='plate_price'>20€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+     <!-- SECTION MAIN COURSE -->
+     <h3 class="menu_title-desc">Plats</h3>
+     <div class="menu_mainCourse">
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='mainCourse_1'>
+       <label for='mainCourse_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Filet de bœuf aux herbes</span>
+         <span class='plate_text'>Accompagné de sa ribambelle de légumes</span>
+        </span>
+        <span class='plate_price'>40€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='mainCourse_2'>
+       <label for='mainCourse_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Parmentier de queue de bœuf</span>
+         <span class='plate_text'>À la truffe noire sur sa purée de panais</span>
+        </span>
+        <span class='plate_price'>35€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='mainCourse_3'>
+       <label for='mainCourse_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Filet de turbot</span>
+         <span class='plate_text'>Aux agrumes</span>
+        </span>
+        <span class='plate_price'>44€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+     <!-- SECTION DESSERT -->
+     <h3 class="menu_title-desc">Desserts</h3>
+     <div class="menu_dessert">
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='dessert_1'>
+       <label for='dessert_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Paris-Brest</span>
+         <span class='plate_text'>Revisité</span>
+        </span>
+        <span class='plate_price'>18€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='dessert_2'>
+       <label for='dessert_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Macaron au chocolat d'exception</span>
+         <span class='plate_text'>Et glace à la vanille de Madagascar</span>
+        </span>
+        <span class='plate_price'>22€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_de_la_palette_du_gout' id='dessert_3'>
+       <label for='dessert_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Mousse au chocolat</span>
+         <span class='plate_text'>Au piment d'Espelette et à la truffe noire</span>
+        </span>
+        <span class='plate_price'>23€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+    </div>
+    <a href="#">Commander</a>
+   </div>
+  </section>
+
  </main>
- <footer></footer>
+ <!-- SECTION FOOTER -->
+ <footer>
+  <div class="footer_container">
+   <ul>
+    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+    <li><a href="#">Mentions légales</a></li>
+    <li><a href="mailto:email@example.com">Contact</a></li>
+    <li><img src="/Images/logo/ohmyfood.png" alt="logo"></li>
+   </ul>
+  </div>
+ </footer>
 
 </body>
 

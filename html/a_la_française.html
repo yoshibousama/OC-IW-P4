@@ -11,16 +11,180 @@
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
   rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
- <title>OhMyFood</title>
+ <link rel="stylesheet" href="css/style.css">
+ <title>OhMyFood Menu A La Francaise</title>
 </head>
 
 <body>
+ <!-- SECTION HEADER -->
  <header>
-  <img src="/Images/logo/ohmyfood.png" alt="logo" class="header_logo">
+  <div class="header_container">
+   <a href="/index.html"><i class="fas fa-arrow-left"></i></a>
+   <h1><img src="/Images/logo/ohmyfood.png" alt="logo" class="header_logo"></h1>
+  </div>
  </header>
  <main>
+  <!-- SECTION BANNER -->
+  <div>
+   <div class="banner_container">
+    <img src="/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat d'a la francaise">
+   </div>
+  </div>
+  <!-- SECTION MENU -->
+  <section>
+   <div class="menu_container">
+    <div>
+     <h2 class="menu_title">À la française</h2>
+     <i class="far fa-heart"></i>
+    </div>
+    <div class="menu">
+     <!-- SECTION STARTER -->
+     <h3 class="menu_title-desc">Entrées</h3>
+     <div class="menu_starter">
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_a_la_française' id='starter_1'>
+       <label for='starter_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Tartare de poulpe acidulé</span>
+         <span class='plate_text'>Aux zestes d'orange</span>
+        </span>
+        <span class='plate_price'>25€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_a_la_française' id='starter_2'>
+       <label for='starter_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Velouté de légumes d'antan</span>
+         <span class='plate_text'>Carotte, panais, topinambour</span>
+        </span>
+        <span class='plate_price'>35€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_starter-choice">
+       <input type="checkbox" name='menu_a_la_française' id='starter_3'>
+       <label for='starter_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Soupe à l'oignon</span>
+         <span class='plate_text'>Revisitée</span>
+        </span>
+        <span class='plate_price'>20€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+     <!-- SECTION MAIN COURSE -->
+     <h3 class="menu_title-desc">Plats</h3>
+     <div class="menu_mainCourse">
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_a_la_française' id='mainCourse_1'>
+       <label for='mainCourse_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Coquilles Saint-Jacques</span>
+         <span class='plate_text'>Accompagnées d'une purée de panais</span>
+        </span>
+        <span class='plate_price'>40€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_a_la_française' id='mainCourse_2'>
+       <label for='mainCourse_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Magret de canard</span>
+         <span class='plate_text'>Et parmentier de pommes de terre</span>
+        </span>
+        <span class='plate_price'>35€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_mainCourse-choice">
+       <input type="checkbox" name='menu_a_la_française' id='mainCourse_3'>
+       <label for='mainCourse_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Pigeonneau d’Ille-et-Vilaine</span>
+         <span class='plate_text'>Sur son lit de gnocchis aux légumes</span>
+        </span>
+        <span class='plate_price'>44€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+     <!-- SECTION DESSERT -->
+     <h3 class="menu_title-desc">Desserts</h3>
+     <div class="menu_dessert">
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_a_la_française' id='dessert_1'>
+       <label for='dessert_1'>
+        <span class='plate_desc'>
+         <span class="plate_title">Pétales de violettes glacés</span>
+         <span class='plate_text'>Et purée de noisettes</span>
+        </span>
+        <span class='plate_price'>18€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_a_la_française' id='dessert_2'>
+       <label for='dessert_2'>
+        <span class='plate_desc'>
+         <span class="plate_title">Fondant au chocolat</span>
+         <span class='plate_text'>Revisité</span>
+        </span>
+        <span class='plate_price'>22€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+      <div class="menu_dessert-choice">
+       <input type="checkbox" name='menu_a_la_française' id='dessert_3'>
+       <label for='dessert_3'>
+        <span class='plate_desc'>
+         <span class="plate_title">Millefeuille croustillant</span>
+         <span class='plate_text'>Myrtilles et pâte d’amande</span>
+        </span>
+        <span class='plate_price'>23€</span>
+        <span class='plate_check'>
+         <i class="fas fa-check-circle plate_check-ico"></i>
+        </span>
+       </label>
+      </div>
+     </div>
+    </div>
+    <a href="#">Commander</a>
+   </div>
+  </section>
+
  </main>
- <footer></footer>
+ <!-- SECTION FOOTER -->
+ <footer>
+  <div class="footer_container">
+   <ul>
+    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
+    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
+    <li><a href="#">Mentions légales</a></li>
+    <li><a href="mailto:email@example.com">Contact</a></li>
+    <li><img src="/Images/logo/ohmyfood.png" alt="logo"></li>
+   </ul>
+  </div>
+ </footer>
 
 </body>
 
