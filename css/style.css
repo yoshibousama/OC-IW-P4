@@ -12,6 +12,7 @@ html:focus-within {
 
 html,
 body,
+.btn_2-txt,
 .localisation_search {
   min-height: 100%;
 }
@@ -27,9 +28,10 @@ li {
 
 a {
   text-decoration: none;
+  color: #000000;
 }
 
-body, .localisation_search {
+body, .btn_2-txt, .localisation_search {
   font-family: "Roboto", sans-serif;
   color: #000000;
 }
@@ -40,7 +42,10 @@ body, .localisation_search {
   color: #353535;
 }
 
-.presentation_title {
+.presentation_title,
+.howToUse_title,
+.restaurant_container .restaurant_title,
+.restaurant_title {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
@@ -54,6 +59,40 @@ body, .localisation_search {
 }
 
 .btn {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.btn_2-txt {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.restaurant_new {
+  font-size: 14px;
+  font-weight: 500;
+  color: #008766;
+}
+
+.card_title {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.card_txt {
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.footer_title {
+  font-family: "Shrikhand", cursive;
+  font-size: 18px;
+  font-weight: 500;
+  color: #ffffff;
+}
+
+.footer_link {
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
@@ -73,25 +112,51 @@ body, .localisation_search {
 }
 
 .btn_2 {
-  padding: 20px 50px;
+  height: 50px;
+  width: 100%;
   margin-bottom: 20px;
   border-radius: 20px;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border: none;
   position: relative;
+  text-align: start;
+  transition: all 0.3s ease-in-out;
 }
 .btn_2:hover {
   background-color: #f5edff;
+  color: #9356dc;
+}
+.btn_2:hover .btn_2-txt {
+  color: #000000;
 }
 .btn_2 .btn_2-1 {
   padding: 5px;
   height: 24px;
   width: 24px;
   display: inline-block;
+  text-align: center;
   border-radius: 50%;
   background-color: #9356dc;
   color: #ffffff;
   position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-50%, 50%);
+}
+.btn_2 .btn_2-ico {
+  padding-inline: 30px 10px;
+}
+
+.card_heart-off {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: red;
+}
+.card_heart-off:active {
+  background-image: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .header_container {
@@ -124,21 +189,79 @@ body, .localisation_search {
   border: none;
 }
 
-.presentation {
+.presentation, .restaurant_container {
   background-color: #f7f7f7;
 }
-.presentation_container, .howToUse_container {
+.presentation_container {
   text-align: center;
   padding-block: 40px;
   padding-inline: 20px;
 }
-.presentation_container .presentation_desc, .howToUse_container .presentation_desc {
+.presentation_container .presentation_desc {
   margin-block: 20px;
 }
 
-.howToUse_container .howToUse_title {
-  text-align: left;
+.howToUse_container, .restaurant_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 20px;
+  margin-block: 40px;
+}
+.howToUse_container .howToUse_title, .restaurant_container .howToUse_title, .restaurant_container .restaurant_title {
+  align-self: flex-start;
   margin-bottom: 25px;
+}
+
+.restaurant_container {
+  margin-bottom: 0;
+  padding-bottom: 30px;
+}
+.restaurant_container .restaurant_title {
+  margin-top: 50px;
+}
+.restaurant_container .restaurant_card {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
+  border-radius: 0 0 15px 15px;
+  position: relative;
+  margin-bottom: 18px;
+  width: 100%;
+}
+.restaurant_container .restaurant_card .restaurant_new {
+  display: inline-block;
+  padding: 5px;
+  background-color: rgba(153, 226, 208, 0.862745098);
+  position: absolute;
+  top: 15px;
+  right: 10px;
+}
+.restaurant_container .restaurant_card .restaurant_card-img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 15px 15px 0 0;
+}
+.restaurant_container .restaurant_card .restaurant_card-desc {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.footer_container {
+  padding-inline: 20px;
+  background-color: #353535;
+  padding-block: 20px;
+}
+.footer_container li:nth-child(2) {
+  margin-top: 10px;
+}
+.footer_container .footer_ico {
+  color: #ffffff;
+  height: 10px;
+  width: 10px;
+  margin-right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */

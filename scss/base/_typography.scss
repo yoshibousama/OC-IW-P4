@@ -11,7 +11,9 @@ body {
   font-weight: $fw500;
   color: $clrTxtGrey;
 }
-.presentation_title {
+.presentation_title,
+.howToUse_title,
+.restaurant_title {
   font-size: $fs24;
   font-weight: $fw700;
   line-height: 28px;
@@ -23,6 +25,35 @@ body {
   color: $clrTxtGrey;
 }
 .btn {
+  font-size: $fs16;
+  font-weight: $fw500;
+  color: $clrNeutral100;
+}
+.btn_2-txt {
+  @extend body;
+  font-size: $fs16;
+  font-weight: $fw500;
+}
+.restaurant_new {
+  font-size: $fs14;
+  font-weight: $fw500;
+  color: $clrTxtNew;
+}
+.card_title {
+  font-size: $fs18;
+  font-weight: $fw700;
+}
+.card_txt {
+  font-size: $fs17;
+  font-weight: $fw300;
+}
+.footer_title {
+  font-family: "Shrikhand", cursive;
+  font-size: $fs18;
+  font-weight: $fw500;
+  color: $clrNeutral100;
+}
+.footer_link {
   font-size: $fs16;
   font-weight: $fw500;
   color: $clrNeutral100;

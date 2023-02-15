@@ -30,7 +30,7 @@
   &_container {
     text-align: center;
     padding-block: 40px;
-    padding-inline: 20px;
+    padding-inline: $pInline20;
     .presentation_desc {
       margin-block: 20px;
     }
@@ -38,9 +38,50 @@
 }
 //SECTION HOW TO USE
 .howToUse_container {
-  @extend .presentation_container;
+  @include flexCenter;
+  flex-direction: column;
+  padding-inline: $pInline20;
+  margin-block: 40px;
   .howToUse_title {
-    text-align: left;
+    align-self: flex-start;
     margin-bottom: 25px;
+  }
+}
+//SECTION RESTAURANT
+.restaurant_container {
+  @extend .presentation;
+  @extend .howToUse_container;
+  margin-bottom: 0;
+  padding-bottom: 30px;
+  .restaurant_title {
+    @extend .howToUse_title;
+    margin-top: 50px;
+  }
+  .restaurant_card {
+    box-shadow: 0px 4px 15px 0px #0000001a;
+    border-radius: 0 0 15px 15px;
+    position: relative;
+    margin-bottom: 18px;
+    width: 100%;
+    .restaurant_new {
+      display: inline-block;
+      padding: 5px;
+      background-color: $clrSecondary;
+      position: absolute;
+      top: 15px;
+      right: 10px;
+    }
+    .restaurant_card-img {
+      width: 100%;
+      height: 230px;
+      object-fit: cover;
+      border-radius: 15px 15px 0 0;
+    }
+    .restaurant_card-desc {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+    }
   }
 }

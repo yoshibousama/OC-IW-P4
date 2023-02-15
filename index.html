@@ -5,13 +5,12 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="/css/style.css">
  <link rel="preconnect" href="https://fonts.googleapis.com">
  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&family=Shrikhand&display=swap"
   rel="stylesheet">
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
- <link rel="stylesheet" href="css/style.css">
  <title>OhMyFood Accueil</title>
 </head>
 
@@ -47,72 +46,79 @@
     <h3 class="howToUse_title">Fonctionnement</h3>
     <button class="btn_2">
      <span class="btn_2-1">1</span>
-     <i class="fas fa-mobile-alt"></i>
-     Choisissez un restaurant
+     <i class="fas fa-mobile-alt btn_2-ico"></i>
+     <span class="btn_2-txt">Choisissez un restaurant</span>
     </button>
     <button class="btn_2">
      <span class="btn_2-1">2</span>
-     <i class="fas fa-list-ul"></i>
-     Composez votre menu
+     <i class="fas fa-list-ul btn_2-ico"></i>
+     <span class="btn_2-txt">Composez votre menu</span>
     </button>
     <button class="btn_2">
      <span class="btn_2-1">3</span>
-     <i class="fas fa-store"></i>
-     Dégustez au restaurant
+     <i class="fas fa-store btn_2-ico"></i>
+     <span class="btn_2-txt">Dégustez au restaurant</span>
     </button>
    </div>
   </section>
   <!-- SECTION RESTAURANT -->
   <section class="restaurant">
    <div class="restaurant_container">
-    <h3>Restaurants</h3>
-    <a href="html/la_palette_du_gout.html">
-     <article>
-      <span>Nouveau</span>
-      <img src="/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+    <h3 class="restaurant_title">Restaurants</h3>
+    <article class="restaurant_card">
+     <a href="html/la_palette_du_gout.html" target="_blank">
+      <span class="restaurant_new">Nouveau</span>
+      <img src="/Images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" class="restaurant_card-img"
        alt="photo d'un plat de la palette du gout">
-      <div class="card_desc">
-       <h4>La palette du goût</h4>
-       <p>Ménilmontant</p>
-       <i class="far fa-heart"></i>
-      </div>
-     </article>
-    </a>
-    <a href="html/la_note_enchantee.html">
-     <article>
-      <span>Nouveau</span>
-      <img src="/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="photo d'un plat de la note enchantée">
-      <div class="card_desc">
-       <h4>La note enchantée</h4>
-       <p>Charonne</p>
-       <i class="far fa-heart"></i>
-      </div>
-     </article>
-     <span>Nouveau</span>
-    </a>
-    <a href="html/a_la_française.html">
-     <article>
-      <img src="/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="photo d'un plat d'a la francaise">
-      <div class="card_desc">
-       <h4>À la française</h4>
-       <p>Cité Rouge
+      <div class="restaurant_card-desc">
+       <div class="restaurant_card-txt">
+        <h4 class="card_title">La palette du goût</h4>
+        <p class="card_txt">Ménilmontant</p>
+       </div>
+       <i class="far fa-heart card_heart-off card_heart-on"></i>
+     </a>
+    </article>
+    <article class="restaurant_card">
+     <a href="html/la_note_enchantee.html" target="_blank">
+      <span class="restaurant_new">Nouveau</span>
+      <img src="/Images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg " class="restaurant_card-img"
+       alt="photo d'un plat de la note enchantée">
+      <div class="restaurant_card-desc">
+       <div class="restaurant_card-txt">
+        <h4 class="card_title">La note enchantée</h4>
+        <p class="card_txt">Charonne</p>
+       </div>
+     </a>
+     <i class="far fa-heart"></i>
+   </div>
+   </article>
+   <article class="restaurant_card">
+    <a href="html/a_la_française.html" target="_blank">
+     <img src="/Images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" class="restaurant_card-img"
+      alt="photo d'un plat d'a la francaise">
+     <div class="restaurant_card-desc">
+      <div class="restaurant_card-txt">
+       <h4 class="card_title">À la française</h4>
+       <p class="card_txt">Cité Rouge
        </p>
-       <i class="far fa-heart"></i>
       </div>
-     </article>
     </a>
-    <a href="html/le_delice_des_sens.html">
-     <article>
-      <span>Nouveau</span>
-      <img src="/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
-       alt="photo d'un plat du delice des gouts">
-      <div class="card_desc">
-       <h4>Le délice des sens</h4>
-       <p>Folie-Méricourt</p>
-       <i class="far fa-heart"></i>
+    <i class="far fa-heart"></i>
+    </div>
+   </article>
+   <article class="restaurant_card">
+    <a href="html/le_delice_des_sens.html" target="_blank">
+     <img src="/Images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" class="restaurant_card-img"
+      alt="photo d'un plat du delice des gouts">
+     <div class="restaurant_card-desc">
+      <div class="restaurant_card-txt">
+       <h4 class="card_title">Le délice des sens</h4>
+       <p class="card_txt">Folie-Méricourt</p>
       </div>
-     </article>
     </a>
+    <i class="far fa-heart"></i>
+    </div>
+   </article>
    </div>
   </section>
  </main>
@@ -120,11 +126,13 @@
  <footer>
   <div class="footer_container">
    <ul>
-    <li><i class="fas fa-utensils"></i><a href="#">Proposer un restaurant</a></li>
-    <li><i class="fas fa-hands-helping"></i><a href="#">Devenir partenaire</a></li>
-    <li><a href="#">Mentions légales</a></li>
-    <li><a href="mailto:email@example.com">Contact</a></li>
-    <li><img src="/Images/logo/ohmyfood.png" alt="logo"></li>
+    <li>
+     <h5 class="footer_title">ohmyfood</h5>
+    </li>
+    <li><i class="fas fa-utensils footer_ico"></i><a href="#" class="footer_link">Proposer un restaurant</a></li>
+    <li><i class="fas fa-hands-helping footer_ico"></i><a href="#" class="footer_link">Devenir partenaire</a></li>
+    <li><a href="#" class="footer_link">Mentions légales</a></li>
+    <li><a href="mailto:email@example.com" class="footer_link">Contact</a></li>
    </ul>
   </div>
  </footer>

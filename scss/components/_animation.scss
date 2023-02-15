@@ -1,0 +1,11 @@
+.card_heart-off {
+  font-size: 25px;
+  cursor: pointer;
+  background-color: red;
+  &:active {
+    background-image: $clrGradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+}
