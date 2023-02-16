@@ -1,0 +1,34 @@
+.card_checkbox {
+  display: none;
+}
+.heart {
+  position: absolute;
+  right: 10px;
+  bottom: 20px;
+  font-size: $fs24;
+  &:hover {
+    cursor: pointer;
+  }
+}
+.card_checkbox:checked + .heart .heart_empty {
+  animation: opacity 0.5s linear forwards;
+}
+.heart_filter {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+}
+.card_checkbox:checked + .heart .heart_filter-full {
+  opacity: 1;
+  z-index: 1;
+  animation: scaleUp 1.8s linear forwards;
+}
+.heart_filter-full {
+  font-size: $fs24;
+  color: transparent;
+  opacity: 0;
+  transform-origin: 50% 50%;
+  transform: scale(0);
+  background: linear-gradient(200deg, #9356dc 35%, #ff79da 65%);
+  -webkit-background-clip: text;
+}

@@ -1,14 +1,26 @@
-.footer_container {
-  padding-inline: $pInline20;
+.footer {
   background-color: $clrTxtGrey;
-  padding-block: 20px;
-  & li:nth-child(2) {
-    margin-top: 10px;
+
+  .footer_container {
+    padding-inline: $pInline20;
+    padding-block: 20px;
+    & li:nth-child(2) {
+      margin-top: 10px;
+    }
+    .footer_ico {
+      color: $clrNeutral100;
+      height: 10px;
+      width: 10px;
+      margin-right: 20px;
+    }
   }
-  .footer_ico {
-    color: $clrNeutral100;
-    height: 10px;
-    width: 10px;
-    margin-right: 20px;
+}
+@media screen and (min-width: $desktop) {
+  .footer_flex {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 50px;
   }
 }
