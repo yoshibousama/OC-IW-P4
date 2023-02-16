@@ -1,11 +1,47 @@
-.card_heart-off {
+//LOADER
+.loader {
+  position: fixed;
+  z-index: 1;
+  background: $clrNeutral100;
+  width: 100%;
+  height: 100vh;
+  animation: delete 1s 3s forwards;
+  @include flexCenter;
+  .dot_1 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $clrPrimary;
+    margin-inline: 20px;
+    animation: loader1 infinite 0.5s alternate;
+  }
+  .dot_2 {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: $clrSecondary;
+    margin-inline: 20px;
+    animation: loader2 infinite 0.5s alternate;
+  }
+  @keyframes loader1 {
+    100% {
+      transform: translateY(-50px);
+    }
+  }
+  @keyframes loader2 {
+    100% {
+      transform: translateY(50px);
+    }
+  }
+  @keyframes delete {
+    to {
+      transform: scale(0);
+    }
+  }
+}
+// HEART
+.card_heart-off,
+.card_heart-on {
   font-size: 25px;
   cursor: pointer;
-  background-color: red;
-  &:active {
-    background-image: $clrGradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
 }
