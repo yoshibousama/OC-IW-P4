@@ -1,7 +1,5 @@
-.card_checkbox {
-  display: none;
-}
-.heart {
+.heart_empty,
+.heart_full {
   position: absolute;
   right: 10px;
   bottom: 20px;
@@ -10,25 +8,15 @@
     cursor: pointer;
   }
 }
-.card_checkbox:checked + .heart .heart_empty {
-  animation: opacity 0.5s linear forwards;
-}
-.heart_filter {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-.card_checkbox:checked + .heart .heart_filter-full {
-  opacity: 1;
-  z-index: 1;
-  animation: scaleUp 1.8s linear forwards;
-}
-.heart_filter-full {
-  font-size: $fs24;
+.heart_full {
   color: transparent;
   opacity: 0;
-  transform-origin: 50% 50%;
-  transform: scale(0);
   background: linear-gradient(200deg, #9356dc 35%, #ff79da 65%);
+  background-clip: text;
   -webkit-background-clip: text;
+  transition: all 0.4s ease-in;
+  &:hover {
+    opacity: 1;
+    transform: scale(1.5) translateY(-10%);
+  }
 }

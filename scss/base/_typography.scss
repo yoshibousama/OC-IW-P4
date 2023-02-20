@@ -1,15 +1,11 @@
 body {
-  font-family: "Roboto", sans-serif;
-  color: $clrNeutral900;
+  font-family: $ffRoboto;
+  color: $clrBlack;
 }
-// h2 {
-//   font-family: "Shrikhand", cursive;
-// }
 .localisation_search {
   @extend body;
-  font-size: $fs16;
-  font-weight: $fw500;
-  color: $clrTxtGrey;
+  @include fs16fw500;
+  color: $clrGray-1;
 }
 .presentation_title,
 .howToUse_title,
@@ -22,22 +18,20 @@ body {
   font-size: $fs18;
   font-weight: $fw300;
   line-height: 21px;
-  color: $clrTxtGrey;
+  color: $clrGray-1;
 }
 .btn {
-  font-size: $fs16;
-  font-weight: $fw500;
-  color: $clrNeutral100;
+  @include fs16fw500;
+  color: $clrWhite;
 }
 .btn_2-txt {
   @extend body;
-  font-size: $fs16;
-  font-weight: $fw500;
+  @include fs16fw500;
 }
 .restaurant_new {
   font-size: $fs14;
   font-weight: $fw500;
-  color: $clrTxtNew;
+  color: $clrTertiary;
 }
 .card_title {
   font-size: $fs18;
@@ -48,13 +42,12 @@ body {
   font-weight: $fw300;
 }
 .footer_title {
-  font-family: "Shrikhand", cursive;
+  font-family: $ffShrikhand;
   font-size: $fs18;
   font-weight: $fw500;
-  color: $clrNeutral100;
+  color: $clrWhite;
 }
 .footer_link {
-  font-size: $fs16;
-  font-weight: $fw500;
-  color: $clrNeutral100;
+  @include fs16fw500;
+  color: $clrWhite;
 }

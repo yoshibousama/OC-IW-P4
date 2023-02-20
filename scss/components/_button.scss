@@ -3,11 +3,12 @@
   display: inline-block;
   background: $clrGradient;
   border-radius: 25px;
-  color: $clrNeutral100;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  color: $clrWhite;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-in-out;
   &:hover {
-    opacity: 85%;
+    opacity: 70%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
   }
 }
 .btn_2 {
@@ -21,10 +22,10 @@
   text-align: start;
   transition: all 0.3s ease-in-out;
   &:hover {
-    background-color: $clrBtnHover;
+    background-color: $clrPurple-1;
     color: $clrPrimary;
     .btn_2-txt {
-      color: $clrNeutral900;
+      color: $clrBlack;
     }
   }
   .btn_2-1 {
@@ -35,7 +36,7 @@
     text-align: center;
     border-radius: 50%;
     background-color: $clrPrimary;
-    color: $clrNeutral100;
+    color: $clrWhite;
     position: absolute;
     top: 0;
     left: 0;

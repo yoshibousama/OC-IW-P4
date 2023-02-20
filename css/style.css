@@ -109,11 +109,12 @@ body, .btn_2-txt, .localisation_search {
   background: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
   border-radius: 25px;
   color: #ffffff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-in-out;
 }
 .btn_1:hover {
-  opacity: 85%;
+  opacity: 70%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
 
 .btn_2 {
@@ -167,99 +168,29 @@ body, .btn_2-txt, .localisation_search {
     transform: scale(0);
   }
 }
-@keyframes opacity {
-  90% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-@keyframes scaleUp {
-  0% {
-    transform: scale3d(0, 0, 1);
-  }
-  33% {
-    transform: scale3d(1, 1, 1);
-  }
-  38% {
-    transform: scale3d(1, 1, 1);
-  }
-  43% {
-    transform: scale3d(1, 1, 1);
-  }
-  48% {
-    transform: scale3d(1, 1, 1);
-  }
-  53% {
-    transform: scale3d(1.4, 1.4, 1);
-  }
-  58% {
-    transform: scale3d(1.05, 1.05, 1);
-  }
-  63% {
-    transform: scale3d(1.2, 1.2, 1);
-  }
-  68% {
-    transform: scale3d(1, 1, 1);
-  }
-  73% {
-    transform: scale3d(1, 1, 1);
-  }
-  78% {
-    transform: scale3d(1, 1, 1);
-  }
-  83% {
-    transform: scale3d(1.4, 1.4, 1);
-  }
-  88% {
-    transform: scale3d(1.05, 1.05, 1);
-  }
-  95% {
-    transform: scale3d(1.2, 1.2, 1);
-  }
-  100% {
-    transform: scale3d(1, 1, 1);
-  }
-}
-.card_checkbox {
-  display: none;
-}
-
-.heart {
+.heart_empty,
+.heart_full {
   position: absolute;
   right: 10px;
   bottom: 20px;
   font-size: 24px;
 }
-.heart:hover {
+.heart_empty:hover,
+.heart_full:hover {
   cursor: pointer;
 }
 
-.card_checkbox:checked + .heart .heart_empty {
-  animation: opacity 0.5s linear forwards;
-}
-
-.heart_filter {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-}
-
-.card_checkbox:checked + .heart .heart_filter-full {
-  opacity: 1;
-  z-index: 1;
-  animation: scaleUp 1.8s linear forwards;
-}
-
-.heart_filter-full {
-  font-size: 24px;
+.heart_full {
   color: transparent;
   opacity: 0;
-  transform-origin: 50% 50%;
-  transform: scale(0);
   background: linear-gradient(200deg, #9356dc 35%, #ff79da 65%);
+  background-clip: text;
   -webkit-background-clip: text;
+  transition: all 0.4s ease-in;
+}
+.heart_full:hover {
+  opacity: 1;
+  transform: scale(1.5) translateY(-10%);
 }
 
 .loader {
@@ -285,7 +216,7 @@ body, .btn_2-txt, .localisation_search {
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  background: rgba(153, 226, 208, 0.862745098);
+  background: #ff79da;
   margin-inline: 5px;
   animation: loader2 infinite 0.5s alternate;
 }

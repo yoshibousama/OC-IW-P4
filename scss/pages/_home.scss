@@ -10,23 +10,23 @@
 }
 //SECTION LOCALISATION
 .localisation_container {
-  background-color: $clrBgLocalisation;
+  background-color: $clrGray-2;
   padding-block: 15px;
   .localisation_form {
     @include flexCenter;
     .localisation_ico {
-      color: $clrTxtGrey;
+      color: $clrGray-1;
     }
     .localisation_search {
       text-align: center;
-      background-color: $clrBgLocalisation;
+      background-color: $clrGray-2;
       border: none;
     }
   }
 }
 //SECTION PRESENTATION
 .presentation {
-  background-color: $clrBgPresentation;
+  background-color: $clrGray-3;
   &_container {
     text-align: center;
     padding-block: 40px;
@@ -75,7 +75,7 @@
     .restaurant_new {
       display: inline-block;
       padding: 5px;
-      background-color: $clrSecondary;
+      background-color: $clrGreen-1;
       position: absolute;
       top: 15px;
       right: 10px;

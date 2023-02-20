@@ -1,14 +1,15 @@
 // COLOR
 $clrPrimary: #9356dc;
-$clrSecondary: #99e2d0dc;
-$clrTxtNew: #008766;
-$clrNeutral100: #ffffff;
-$clrNeutral900: #000000;
-$clrBtnHover: #f5edff;
-$clrTxtGrey: #353535;
-$clrBgLocalisation: #eaeaea;
-$clrBgPresentation: #f7f7f7;
-$clrGradient: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
+$clrSecondary: #ff79da;
+$clrTertiary: #008766;
+$clrBlack: #000000;
+$clrWhite: #ffffff;
+$clrGray-1: #353535;
+$clrGray-2: #eaeaea;
+$clrGray-3: #f7f7f7;
+$clrGreen-1: #99e2d0dc;
+$clrPurple-1: #f5edff;
+$clrGradient: linear-gradient(0deg, $clrPrimary -5.2%, $clrSecondary 110.74%);
 // FONT
 $fs14: 14px;
 $fs16: 16px;
@@ -21,6 +22,8 @@ $fw300: 300;
 $fw400: 400;
 $fw500: 500;
 $fw700: 700;
+$ffRoboto: "Roboto", sans-serif;
+$ffShrikhand: "Shrikhand", cursive;
 //PADDING
 $pInline20: 20px;
 //MEDIAQUERIE
