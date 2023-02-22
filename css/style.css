@@ -103,6 +103,26 @@ body, .btn_2-txt, .localisation_search {
   color: #ffffff;
 }
 
+.menu_title {
+  font-family: "Shrikhand", cursive;
+  font-size: 28px;
+}
+
+.menu_title-desc {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.plate_title {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.plate_text {
+  font-size: 15px;
+  font-weight: 300;
+}
+
 .btn_1 {
   padding: 18px 20px;
   display: inline-block;
@@ -193,6 +213,30 @@ body, .btn_2-txt, .localisation_search {
   transform: scale(1.5) translateY(-10%);
 }
 
+.heart_empty-page,
+.heart_full-page {
+  position: absolute;
+  font-size: 24px;
+  right: 10px;
+}
+.heart_empty-page:hover,
+.heart_full-page:hover {
+  cursor: pointer;
+}
+
+.heart_full-page {
+  color: transparent;
+  opacity: 0;
+  background: linear-gradient(200deg, #9356dc 35%, #ff79da 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in;
+}
+.heart_full-page:hover {
+  opacity: 1;
+  transform: scale(1.5) translateY(-10%);
+}
+
 .loader {
   position: fixed;
   z-index: 2;
@@ -227,10 +271,12 @@ body, .btn_2-txt, .localisation_search {
   align-items: center;
   padding-block: 15px;
   margin-bottom: 5px;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 .header_container .header_logo {
   width: 162px;
+}
+.header_container .header_shadow {
+  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1490196078);
 }
 
 .localisation_container {
@@ -328,6 +374,17 @@ body, .btn_2-txt, .localisation_search {
     gap: 20px;
   }
 }
+.header_container {
+  position: relative;
+}
+
+.header_return {
+  position: absolute;
+  left: 0;
+  padding-inline: 20px;
+  font-family: "Shrikhand", cursive;
+}
+
 .footer {
   background-color: #353535;
 }
@@ -353,6 +410,32 @@ body, .btn_2-txt, .localisation_search {
     flex-direction: row-reverse;
     gap: 50px;
   }
+}
+.banner_img {
+  width: 100%;
+  max-height: 275px;
+  object-fit: cover;
+}
+
+.menu_container {
+  background-color: #f7f7f7;
+  position: relative;
+  top: -4rem;
+  border-radius: 3rem 3rem 0 0;
+  max-width: 1000px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu_intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 17px;
+  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

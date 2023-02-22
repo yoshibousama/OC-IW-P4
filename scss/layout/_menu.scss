@@ -1,0 +1,17 @@
+.menu_container {
+  background-color: $clrGray-3;
+  position: relative;
+  top: -4rem;
+  border-radius: 3rem 3rem 0 0;
+  max-width: 1000px;
+  margin-inline: auto;
+  @include flexCenter;
+  flex-direction: column;
+}
+.menu_intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 17px;
+  position: relative;
+}

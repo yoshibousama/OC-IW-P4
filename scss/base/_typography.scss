@@ -51,3 +51,19 @@ body {
   @include fs16fw500;
   color: $clrWhite;
 }
+.menu_title {
+  font-family: $ffShrikhand;
+  font-size: $fs28;
+}
+.menu_title-desc {
+  font-size: $fs16;
+  font-weight: $fw300;
+}
+.plate_title {
+  font-size: $fs18;
+  font-weight: $fw500;
+}
+.plate_text {
+  font-size: $fs15;
+  font-weight: $fw300;
+}
