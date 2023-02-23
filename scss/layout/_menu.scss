@@ -49,8 +49,8 @@
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    white-space: nowrap;
     width: calc(100% - 30px);
+    white-space: nowrap;
     padding: 10px;
     &:hover {
       cursor: pointer;

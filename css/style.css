@@ -297,11 +297,9 @@ body, .btn_2-txt, .localisation_search {
 .header_container .header_logo {
   width: 162px;
 }
-.header_container .header_shadow {
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.1490196078);
-}
 
 .localisation_container {
+  box-shadow: 1px -2px 3px 1px rgba(0, 0, 0, 0.15);
   background-color: #eaeaea;
   padding-block: 15px;
 }
@@ -501,8 +499,8 @@ body, .btn_2-txt, .localisation_search {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  white-space: nowrap;
   width: calc(100% - 30px);
+  white-space: nowrap;
   padding: 10px;
 }
 .menu_starter-choice .plate_desc:hover,
