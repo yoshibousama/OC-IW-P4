@@ -374,7 +374,7 @@ body, .btn_2-txt, .localisation_search {
   right: 10px;
 }
 .restaurant_container .restaurant_card .restaurant_card-img {
-  aspect-ratio: 55;
+  aspect-ratio: 16/9;
   height: 230px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -500,13 +500,22 @@ body, .btn_2-txt, .localisation_search {
   justify-content: space-between;
   flex-direction: column;
   width: calc(100% - 30px);
-  white-space: nowrap;
   padding: 10px;
 }
 .menu_starter-choice .plate_desc:hover,
 .menu_mainCourse-choice .plate_desc:hover,
 .menu_dessert-choice .plate_desc:hover {
   cursor: pointer;
+}
+.menu_starter-choice .plate_desc .plate_title,
+.menu_starter-choice .plate_desc .plate_text,
+.menu_mainCourse-choice .plate_desc .plate_title,
+.menu_mainCourse-choice .plate_desc .plate_text,
+.menu_dessert-choice .plate_desc .plate_title,
+.menu_dessert-choice .plate_desc .plate_text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_starter-choice .plate_price,
 .menu_mainCourse-choice .plate_price,

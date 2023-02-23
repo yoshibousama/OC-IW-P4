@@ -50,10 +50,15 @@
     justify-content: space-between;
     flex-direction: column;
     width: calc(100% - 30px);
-    white-space: nowrap;
     padding: 10px;
     &:hover {
       cursor: pointer;
+    }
+    .plate_title,
+    .plate_text {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
     }
   }
   .plate_price {
