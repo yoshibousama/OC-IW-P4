@@ -111,6 +111,7 @@ body, .btn_2-txt, .localisation_search {
 .menu_title-desc {
   font-size: 16px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .plate_title {
@@ -123,7 +124,7 @@ body, .btn_2-txt, .localisation_search {
   font-weight: 300;
 }
 
-.btn_1 {
+.btn_1, .btn_3 {
   padding: 18px 20px;
   display: inline-block;
   background: linear-gradient(0deg, #9356dc -5.2%, #ff79da 110.74%);
@@ -132,7 +133,7 @@ body, .btn_2-txt, .localisation_search {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.45);
   transition: all 0.3s ease-in-out;
 }
-.btn_1:hover {
+.btn_1:hover, .btn_3:hover {
   opacity: 70%;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8);
 }
@@ -173,6 +174,11 @@ body, .btn_2-txt, .localisation_search {
   padding-inline: 30px 10px;
 }
 
+.btn_3 {
+  padding-inline: 50px;
+  margin: 10px 0 30px 17px;
+}
+
 @keyframes loader1 {
   100% {
     transform: translateY(-50px);
@@ -186,6 +192,14 @@ body, .btn_2-txt, .localisation_search {
 @keyframes delete {
   to {
     transform: scale(0);
+  }
+}
+@keyframes spinCheck {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
   }
 }
 .heart_empty,
@@ -213,11 +227,19 @@ body, .btn_2-txt, .localisation_search {
   transform: scale(1.5) translateY(-10%);
 }
 
+.heart_flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding-left: 20px;
+}
+
 .heart_empty-page,
 .heart_full-page {
-  position: absolute;
   font-size: 24px;
   right: 10px;
+  position: absolute;
 }
 .heart_empty-page:hover,
 .heart_full-page:hover {
@@ -411,7 +433,10 @@ body, .btn_2-txt, .localisation_search {
     gap: 50px;
   }
 }
-.banner_img {
+.banner_container {
+  position: relative;
+}
+.banner_container .banner_img {
   width: 100%;
   max-height: 275px;
   object-fit: cover;
@@ -419,23 +444,99 @@ body, .btn_2-txt, .localisation_search {
 
 .menu_container {
   background-color: #f7f7f7;
+  max-width: 1000px;
+  margin-inline: auto;
+}
+.menu_container .menu_intro {
+  background-color: #f7f7f7;
   position: relative;
   top: -4rem;
   border-radius: 3rem 3rem 0 0;
-  max-width: 1000px;
-  margin-inline: auto;
+  display: flex;
+  padding: 40px 17px 0 17px;
+  gap: 50px;
+}
+
+.menu {
+  padding-inline: 17px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.menu .menu_title-desc {
+  border-bottom: 3px solid rgba(153, 226, 208, 0.862745098);
+  width: 40px;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+.menu_starter-choice,
+.menu_mainCourse-choice,
+.menu_dessert-choice {
+  display: flex;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0px 4.01149px 15.0431px rgba(0, 0, 0, 0.1);
+  margin-bottom: 15px;
+  max-width: 650px;
+  width: 100%;
+  height: 70px;
+  overflow: hidden;
+}
+.menu_starter-choice:hover .plate_check,
+.menu_mainCourse-choice:hover .plate_check,
+.menu_dessert-choice:hover .plate_check {
+  transition: all 0.8s;
+  margin: 0;
+  cursor: pointer;
+}
+.menu_starter-choice:hover .plate_check-ico,
+.menu_mainCourse-choice:hover .plate_check-ico,
+.menu_dessert-choice:hover .plate_check-ico {
+  animation: spinCheck 1s;
+}
+.menu_starter-choice .plate_desc,
+.menu_mainCourse-choice .plate_desc,
+.menu_dessert-choice .plate_desc {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  white-space: nowrap;
+  width: calc(100% - 30px);
+  padding: 10px;
+}
+.menu_starter-choice .plate_desc:hover,
+.menu_mainCourse-choice .plate_desc:hover,
+.menu_dessert-choice .plate_desc:hover {
+  cursor: pointer;
+}
+.menu_starter-choice .plate_price,
+.menu_mainCourse-choice .plate_price,
+.menu_dessert-choice .plate_price {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  align-items: flex-end;
+  padding: 0 20px 10px 0;
+  border-radius: 0 15px 15px 0;
 }
-
-.menu_intro {
+.menu_starter-choice .plate_price:hover,
+.menu_mainCourse-choice .plate_price:hover,
+.menu_dessert-choice .plate_price:hover {
+  cursor: pointer;
+}
+.menu_starter-choice .plate_check,
+.menu_mainCourse-choice .plate_check,
+.menu_dessert-choice .plate_check {
   display: flex;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 17px;
-  position: relative;
+  background-color: rgba(153, 226, 208, 0.862745098);
+  color: #ffffff;
+  font-size: 24px;
+  border-radius: 0 15px 15px 0;
+  width: 70px;
+  margin-right: -5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

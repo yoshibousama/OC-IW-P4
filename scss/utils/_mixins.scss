@@ -7,3 +7,15 @@
   font-size: $fs16;
   font-weight: $fw500;
 }
+@mixin gradientHeart {
+  color: transparent;
+  opacity: 0;
+  background: linear-gradient(200deg, $clrPrimary 35%, $clrSecondary 65%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  transition: all 0.4s ease-in;
+}
+@mixin gradientHeartHover {
+  opacity: 1;
+  transform: scale(1.5) translateY(-10%);
+}

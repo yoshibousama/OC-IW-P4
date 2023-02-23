@@ -46,3 +46,8 @@
     padding-inline: 30px 10px;
   }
 }
+.btn_3 {
+  @extend .btn_1;
+  padding-inline: 50px;
+  margin: 10px 0 30px 17px;
+}
