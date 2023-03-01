@@ -11,6 +11,11 @@
     padding: 40px 17px 0 17px;
     gap: 50px;
   }
+  @media screen and (min-width: $tablet) {
+    .menu_intro {
+      justify-content: center;
+    }
+  }
 }
 .menu {
   padding-inline: 17px;
@@ -19,10 +24,25 @@
   flex-direction: column;
 
   .menu_title-desc {
-    border-bottom: 3px solid $clrGreen-1;
-    width: 40px;
-    margin-bottom: 15px;
-    padding-bottom: 5px;
+    margin: 0 auto 15px;
+    width: 100%;
+    max-width: 650px;
+    .border_bot-title {
+      width: 100%;
+      max-width: 50px;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      background-color: $clrGreen-1;
+    }
+  }
+
+  .menu_starter,
+  .menu_mainCourse,
+  .menu_dessert {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 650px;
   }
 }
 .menu_starter-choice,
@@ -51,6 +71,9 @@
     flex-direction: column;
     width: calc(100% - 30px);
     padding: 10px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
     &:hover {
       cursor: pointer;
     }
@@ -78,5 +101,6 @@
     border-radius: 0 15px 15px 0;
     width: 70px;
     margin-right: -5rem;
+    transition: all 0.8s;
   }
 }

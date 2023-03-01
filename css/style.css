@@ -179,6 +179,11 @@ body, .btn_2-txt, .localisation_search {
   margin: 10px 0 30px 17px;
 }
 
+@media screen and (min-width: 680px) {
+  .btn_center {
+    text-align: center;
+  }
+}
 @keyframes loader1 {
   100% {
     transform: translateY(-50px);
@@ -237,7 +242,7 @@ body, .btn_2-txt, .localisation_search {
 
 .heart_empty-page,
 .heart_full-page {
-  font-size: 24px;
+  font-size: 20px;
   right: 10px;
   position: absolute;
 }
@@ -358,6 +363,9 @@ body, .btn_2-txt, .localisation_search {
 .restaurant_container .restaurant_title {
   margin-top: 50px;
 }
+.restaurant_container .restaurant_flex {
+  width: 100%;
+}
 .restaurant_container .restaurant_card {
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1019607843);
   border-radius: 0 0 15px 15px;
@@ -374,7 +382,7 @@ body, .btn_2-txt, .localisation_search {
   right: 10px;
 }
 .restaurant_container .restaurant_card .restaurant_card-img {
-  aspect-ratio: 16/9;
+  width: 100%;
   height: 230px;
   object-fit: cover;
   border-radius: 15px 15px 0 0;
@@ -454,6 +462,11 @@ body, .btn_2-txt, .localisation_search {
   padding: 40px 17px 0 17px;
   gap: 50px;
 }
+@media screen and (min-width: 680px) {
+  .menu_container .menu_intro {
+    justify-content: center;
+  }
+}
 
 .menu {
   padding-inline: 17px;
@@ -462,10 +475,24 @@ body, .btn_2-txt, .localisation_search {
   flex-direction: column;
 }
 .menu .menu_title-desc {
-  border-bottom: 3px solid rgba(153, 226, 208, 0.862745098);
-  width: 40px;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
+  margin: 0 auto 15px;
+  width: 100%;
+  max-width: 650px;
+}
+.menu .menu_title-desc .border_bot-title {
+  width: 100%;
+  max-width: 50px;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  background-color: rgba(153, 226, 208, 0.862745098);
+}
+.menu .menu_starter,
+.menu .menu_mainCourse,
+.menu .menu_dessert {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 650px;
 }
 
 .menu_starter-choice,
@@ -501,6 +528,9 @@ body, .btn_2-txt, .localisation_search {
   flex-direction: column;
   width: calc(100% - 30px);
   padding: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 .menu_starter-choice .plate_desc:hover,
 .menu_mainCourse-choice .plate_desc:hover,
@@ -544,6 +574,7 @@ body, .btn_2-txt, .localisation_search {
   border-radius: 0 15px 15px 0;
   width: 70px;
   margin-right: -5rem;
+  transition: all 0.8s;
 }
 
 /*# sourceMappingURL=style.css.map */

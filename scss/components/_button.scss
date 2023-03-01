@@ -51,3 +51,8 @@
   padding-inline: 50px;
   margin: 10px 0 30px 17px;
 }
+@media screen and (min-width: $tablet) {
+  .btn_center {
+    text-align: center;
+  }
+}
