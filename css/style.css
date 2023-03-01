@@ -207,6 +207,15 @@ body, .btn_2-txt, .localisation_search {
     transform: rotate(360deg);
   }
 }
+@keyframes fadeUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 .heart_empty,
 .heart_full {
   position: absolute;
@@ -290,6 +299,24 @@ body, .btn_2-txt, .localisation_search {
   background: #ff79da;
   margin-inline: 5px;
   animation: loader2 infinite 0.5s alternate;
+}
+
+.fadeUp_1 {
+  animation: fadeUp 1s forwards ease-in-out;
+  opacity: 0;
+  animation-delay: 0.8s;
+}
+
+.fadeUp_2 {
+  animation: fadeUp 1s forwards ease-in-out;
+  opacity: 0;
+  animation-delay: 1.6s;
+}
+
+.fadeUp_3 {
+  animation: fadeUp 1s forwards ease-in-out;
+  opacity: 0;
+  animation-delay: 2.4s;
 }
 
 .header_container {

@@ -1,0 +1,7 @@
+@for $i from 1 through 3 {
+  .fadeUp_#{$i} {
+    animation: fadeUp 1s forwards ease-in-out;
+    opacity: 0;
+    animation-delay: $i * 0.8s;
+  }
+}
