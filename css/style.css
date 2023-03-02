@@ -179,11 +179,10 @@ body, .btn_2-txt, .localisation_search {
   margin: 10px 0 30px 17px;
 }
 
-@media screen and (min-width: 680px) {
-  .btn_center {
-    text-align: center;
-  }
+.btn_center {
+  text-align: center;
 }
+
 @keyframes loader1 {
   100% {
     transform: translateY(-50px);
