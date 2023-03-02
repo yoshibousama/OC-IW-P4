@@ -221,7 +221,7 @@ body, .btn_2-txt, .localisation_search {
   position: absolute;
   right: 10px;
   bottom: 20px;
-  font-size: 24px;
+  font-size: 20px;
 }
 .heart_empty:hover,
 .heart_full:hover {
@@ -238,7 +238,7 @@ body, .btn_2-txt, .localisation_search {
 }
 .heart_full:hover {
   opacity: 1;
-  transform: scale(1.5) translateY(-10%);
+  transform: scale(1.15);
 }
 
 .heart_flex {
@@ -251,7 +251,7 @@ body, .btn_2-txt, .localisation_search {
 
 .heart_empty-page,
 .heart_full-page {
-  font-size: 20px;
+  font-size: 18px;
   right: 10px;
   position: absolute;
 }
@@ -270,7 +270,7 @@ body, .btn_2-txt, .localisation_search {
 }
 .heart_full-page:hover {
   opacity: 1;
-  transform: scale(1.5) translateY(-10%);
+  transform: scale(1.15);
 }
 
 .loader {
